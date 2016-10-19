@@ -1,9 +1,9 @@
-<div ng-model="movieID" style="margin:50px">
+<div ng-model="movieID" style="margin:20px">
   <img style="height:300px; width:250px;" ng-src={{movieID.Poster}}>
   <div>
   <h2>{{movieID.Title}}</h2>
-  Starring {{ movieID.Actors }}.
-  {{movieID.Plot}}
-  {{movieID.Rated}}
+  <span>Starring {{ movieID.Actors }}.</span><br>
+  <span>Plot: {{movieID.Plot}}</span><br>
+  <span> Rated {{movieID.Rated}}</span><br>
   </div>
 </div>

@@ -17,7 +17,7 @@
             <span style="margin-left:41%; font-size:20px">Enter a movie by title</span></a>
       <form align="center" ng-submit="movieSearch(search)">
           <input ng-model="search" type="text" name="searchbox" id="searchBox" size="50" placeholder="Example: Gone With the Wind, Borat, Die Hard etc.">
-          <button href="#/" type="submit" id="searchButton">Search</button>
+          <button type="submit" id="searchButton">Search</button>
       </form>
       </div>
 
@@ -25,6 +25,7 @@
 
 <div ng-view></div>
 
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
     <script src="./js/app.js" type="text/javascript"></script>
     <script src="./js/controllers.js" type="text/javascript"></script>
