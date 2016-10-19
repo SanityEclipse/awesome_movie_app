@@ -1,0 +1,22 @@
+#headerDiv {
+height: 175px;
+background-color: #333333;
+color: white;
+width: 100%;
+padding: 20px;
+}
+
+#searchBox {
+margin: 15px;
+color: black;
+background-color: white;
+}
+
+#searchButton {
+  background-color: blue;
+}
+
+header>div>h2 {
+  font-family: fantasy;
+  font-weight: bold;
+}
