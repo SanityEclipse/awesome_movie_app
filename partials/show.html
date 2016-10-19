@@ -1,3 +1,9 @@
-<p>This is the shows template</p>
-
-<p>Message: {{view.message}}</p>
+<div ng-model="movieID" style="margin:50px">
+  <img style="height:300px; width:250px;" ng-src={{movieID.Poster}}>
+  <div>
+  <h2>{{movieID.Title}}</h2>
+  Starring {{ movieID.Actors }}.
+  {{movieID.Plot}}
+  {{movieID.Rated}}
+  </div>
+</div>

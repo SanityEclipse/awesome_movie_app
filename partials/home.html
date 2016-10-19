@@ -1,9 +1,6 @@
-<div ng-model="movieData" style="margin:20px" ng-repeat="results in movieData">
-  <h4>Title: {{ results.Title }} </h4>
+<div ng-click="movieSelect(results.imdbID)" ng-model="movieData" style="margin:20px" ng-repeat="results in movieData">
+  <a href="#/show" <h4>Title: {{ results.Title }} </h4>
     <h5>Year: {{ results.Year}}</h5>
-    <h5>imdb ID: http://www.imdb.com/title/{{ results.imdbID}}</h5>
+    <h5>imdb ID: {{ results.imdbID}}</h5></a>
   </div>
 </div>
-
-
-<!-- <a href='#/show'>Test Link</a>  -->

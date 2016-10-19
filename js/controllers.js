@@ -7,7 +7,14 @@ $scope.movieSearch= function(search){
       $scope.movieData = response.data.Search;
       })
     }
-  });
+  $scope.movieSelect= function(id){
+      $http.get('http://www.omdbapi.com/?i='+id)
+        .then(function(response){
+        console.log(response);
+        $scope.movieID = response.data
+        })
+      }
+    });
 
 app.controller('HomeController', function($scope){
   $scope.view = {};

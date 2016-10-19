@@ -11,14 +11,16 @@
 
 <div ng-controller="apiController">
 <header>
+  <a href="#/">
       <div id="headerDiv">
           <h2 align="center">Angular Movie Search Application</h2>
-            <span style="margin-left:41%; font-size:20px">Enter a movie by title</span>
+            <span style="margin-left:41%; font-size:20px">Enter a movie by title</span></a>
       <form align="center" ng-submit="movieSearch(search)">
           <input ng-model="search" type="text" name="searchbox" id="searchBox" size="50" placeholder="Example: Gone With the Wind, Borat, Die Hard etc.">
-          <button type="submit" id="searchButton">Search</button>
+          <button href="#/" type="submit" id="searchButton">Search</button>
       </form>
       </div>
+
   </header>
 
 <div ng-view></div>
